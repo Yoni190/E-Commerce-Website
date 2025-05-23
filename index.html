@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cloud Storage E-Commerce</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>CloudStoragePro</h1>
+        <nav>
+            <a href="#plans">Plans</a>
+            <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="plans">
+            <h2>Storage Plans</h2>
+            <div class="products">
+                <div class="product" data-id="1" data-name="Basic Plan" data-price="5">
+                    <h3>Basic Plan</h3>
+                    <p>100 GB storage</p>
+                    <p>$5 / month</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product" data-id="2" data-name="Standard Plan" data-price="10">
+                    <h3>Standard Plan</h3>
+                    <p>1 TB storage</p>
+                    <p>$10 / month</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product" data-id="3" data-name="Premium Plan" data-price="20">
+                    <h3>Premium Plan</h3>
+                    <p>5 TB storage</p>
+                    <p>$20 / month</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <div id="cart-total"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 CloudStoragePro. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
